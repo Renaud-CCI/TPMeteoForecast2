@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import forecast from './forecast';
+import {forecast} from './forecast';
 
 const rootReducer = combineReducers({
   forecast,

@@ -21,10 +21,10 @@
 
 // export default store;
 
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import rootReducer from './reducers';
 
-const reducer = (state = {}, action) => state;
-
-const store = createStore(reducer);
+const store = createStore(rootReducer, applyMiddleware());
 
 export default store;
